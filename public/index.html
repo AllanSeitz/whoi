@@ -1,13 +1,1143 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/screen.css">
+<html lang="en-US" class="no-js">
+  <head>
+    <!--
+      ==============================================
+      Title and Meta Tags
+      ===============================================
+    -->
+    <meta charset="utf-8" />
+    <title>Allan Seitz | Modern Personal Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--
+      ==============================================
+      Favicons
+      ===============================================
+    -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/images/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/images/apple-touch-icon-114x114.png"
+    />
+
+    <!--
+      ==============================================
+      CSS
+      ===============================================
+    -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/flexslider.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/styles-1.css" />
+
+    <!--
+      ==============================================
+      Fonts
+      ===============================================
+    -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--
+      ==============================================
+      JS
+      ===============================================
+    -->
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/libs/respond.min.js"></script>
+    <![endif]-->
+
+    <script
+      type="text/javascript"
+      src="assets/js/libs/modernizr.min.js"
+    ></script>
   </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
+
+  <body data-spy="scroll" data-target="#main-nav" data-offset="400">
+    <!-- === PAGE PRELOADER === -->
+    <div id="page-loader"><span class="page-loader-gif"></span></div>
+
+    <!--
+      ==============================================
+      MAIN NAV
+      ===============================================
+    -->
+    <div id="main-nav" class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#site-nav"
+          >
+            <span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span>
+          </button>
+
+          <!-- ======= LOGO ======== -->
+          <a class="navbar-brand scrollto" href="#home"
+            ><i class="fab fa-d-and-d fa-2x"></i>
+          </a>
+        </div>
+
+        <div id="site-nav" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a
+                href="#about"
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-2x" -in> </i>
+                <p>LinkedIn</p></a
+              >
+            </li>
+            <li>
+              <a href="https://suncoast.io/" target="_blank"
+                ><i class="fas fa-graduation-cap fa-2x"></i>
+                <p>Suncoast D.G.</p></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/AllanSeitz" target="_blank"
+                ><i class="fab fa-github fa-2x"></i>
+                <p>GitHub</p></a
+              >
+            </li>
+            <li>
+              <a href="mailto:allanseitz@yahoo.com"
+                ><i class="far fa-envelope fa-2x"></i>
+                <p>Contact</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- End navbar-collapse -->
+      </div>
+      <!-- End container -->
+    </div>
+    <!-- End main-nav -->
+
+    <!--
+      ==============================================
+      HEADER
+      ===============================================
+    -->
+    <header id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="scrollimation fade-down d1">Allan Seitz</h1>
+            <h2 class="scrollimation fade-down d3">
+              <span class="main-color"></span>Passionate,
+              <span class="main-color"></span>Dedicated,
+              <span class="main-color"></span>Fullstack-Developer
+            </h2>
+          </div>
+        </div>
+
+        <div class="header-img scrollimation fade-up d1">
+          <img class="img-responsive" src="assets/images/me.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <div id="main-content">
+      <div class="scroll-down">
+        <a href="#services" class="scrollto">Who Is Allan?</a>
+      </div>
+
+      <!--
+        ==============================================
+        SERVICES
+        ===============================================
+      -->
+      <section id="services" class="big-padding">
+        <div class="container">
+          <h1 class="section-title">
+            My Passions<span class="main-color">1</span>
+          </h1>
+
+          <div class="text-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                href="#front-end"
+                class="btn btn-default toggle-tabs active"
+              >
+                Front End
+              </button>
+              <button
+                type="button"
+                href="#back-end"
+                class="btn btn-default toggle-tabs"
+              >
+                Back End
+              </button>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="row tab-pane active" id="front-end">
+              <div class="col-sm-4 service-item scrollimation fade-left">
+                <div class="service-icon "><i class="fa fa-html5"></i></div>
+
+                <h3>Clean HTML5 Code</h3>
+
+                <p>
+                  I strive to write clean HTML5 following my teachings at
+                  Suncoast Developers Guild. I always utilize the proper tags
+                  when writing out any HTML5.
+                </p>
+              </div>
+
+              <div class="col-sm-4 service-item scrollimation fade-left">
+                <div class="service-icon ">
+                  <i class="fab fa-react just-react"></i>
+                </div>
+
+                <h3>Modern React.js</h3>
+
+                <p>
+                  If able, I choose to use React as my front end framework. I
+                  enjoy the flow of react and breaking my site up into
+                  components
+                </p>
+              </div>
+
+              <div class="col-sm-4 service-item scrollimation fade-left">
+                <div class="service-icon "><i class="fa fa-mobile"></i></div>
+
+                <h3>Responsive Design</h3>
+
+                <p>
+                  Any project I take on I ensure to start with mobile and build
+                  my way up. Responsive design is very important to my projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="row tab-pane" id="back-end">
+              <div class="col-sm-4 service-item">
+                <div class="service-icon"><i class="fab fa-windows"></i></div>
+
+                <h3>C Sharp</h3>
+
+                <p>
+                  My back end language of choice is definitely C-#. I thoroughly
+                  enjoy the process of setting up and maintaining my database
+                  with this language.
+                </p>
+              </div>
+
+              <div class="col-sm-4 service-item">
+                <div class="service-icon"><i class="fa fa-undo fa-6x"></i></i></div>
+
+                <h3>Sql</h3>
+
+                <p>
+                  PGCLI is my preferred method for verifying my database structure and making/deleting database.
+                </p>
+              </div>
+
+              <div class="col-sm-4 service-item">
+                <div class="service-icon"><i class="fa fa-drupal"></i></div>
+
+                <h3>.Net</h3>
+
+                <p>
+                  .Net is the platform I am most passionate about using. Be it c# or Visual basic, .Net is the platform for me
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        ==============================================
+        LATEST PROJECTS
+        ===============================================
+      -->
+
+      <section class="big-padding gray-bg">
+        <div class="container">
+          <h1 class="section-title">
+            Latest Projects<span class="main-color">2</span>
+          </h1>
+
+          <div class="row">
+            <div class="col-sm-5 push-down scrollimation fade-right">
+              <h2 class="row-title">Capstone - DevLife</h2>
+
+              <p>
+                This is my first full stack web app. It incorporates all of my developer abilities. It utilizes React, as well as .Net/C#, to bring relevant statistics from across the country to Jr. developers, all in one spot.              </p>
+
+              <p>
+                <a class="btn btn-dc btn-small btn-main-color" target="_blank" href="http://dev-life.surge.sh/"
+                  >Visit Website</a
+                >
+              </p>
+            </div>
+
+            <div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+              <img
+                class="img-responsive"
+                src="assets/images/devlife.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row">
+            <div
+              class="col-sm-6 col-sm-push-6 push-down scrollimation fade-left"
+            >
+              <h2 class="row-title">Store Front - React Router</h2>
+
+              <p>
+This is my take on an e-commerce site with my own flare. All items were custom selected by myself and have links to actually purchase the items              </p>
+
+              <p>
+                React.js is the front end framework of choice for this web application. All styling and animations were done with CSS and BootStrap3.
+              </p>
+
+              <p>
+                <a class="btn btn-dc btn-small btn-main-color" target="_blank" href="http://allansstorefront.surge.sh/"
+                  >Visit Website</a
+                >
+              </p>
+            </div>
+
+            <div class="col-sm-6 col-sm-pull-6 scrollimation fade-right">
+              <img
+                class="img-responsive"
+                src="assets/images/storefront.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        ==============================================
+        CALL TO ACTION
+        ===============================================
+      -->
+      <section id="cta1" class="bg-main-color cta">
+        <div class="container text-center scrollimation fade-up">
+          <p>It's not about ideas. It's about making ideas happen.</p>
+
+          <a class="btn btn-dc btn-white scrollto" href="mailto:allanseitz@yahoo.com"
+            >Contact Me</a
+          >
+        </div>
+      </section>
+
+      <!--
+        ==============================================
+        ABOUT
+        ===============================================
+      -->
+      <section id="about" class="big-padding">
+        <div class="container">
+          <h1 class="section-title">
+            My Story<span class="main-color">3</span>
+          </h1>
+
+          <div class="row profile">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <figure class="hover-wrapper scrollimation fade-right">
+                <img
+                  class="img-responsive img-circle profile-img"
+                  src="assets/images/meandgirls.jpg"
+                  alt=""
+                />
+                <figcaption class="hover-text">That's Me!</figcaption>
+              </figure>
+
+              <h2 class="scrollimation fade-left">Allan Seitz</h2>
+              <h3 class="scrollimation fade-left">FullStack developer</h3>
+
+              <p class="margin-top scrollimation fade-right">
+                I am Allan Seitz, a twenty nine year old developer from CA. I
+                have served as an Air Traffic Controller for five years in the USAF
+                before coming to Suncoast Developers Guild to pursue my long time passion of developing. I have a passion for developing
+                challenging, intuitive and beautiful products. My development process
+                is very hands-on and focused.
+              </p>
+
+              <p class="lead margin-top scrollimation fade-left">
+                Developing is not just a job for me, it's a passion.
+              </p>
+              <p class="scrollimation fade-left">
+                <a class="btn btn-dc btn-main-color scrollto" href="https://www.linkedin.com/feed/"
+                  >My LinkedIn</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        ==============================================
+        SKILLS
+        ===============================================
+      -->
+      <section id="skills" class="small-padding dark-bg">
+        <div class="container">
+          <div class="row skills">
+            <div class="col-sm-6 col-md-3 text-center">
+              <span class="chart plus-symbol" data-percent="80"
+                ><span class="percent">80</span></span
+              >
+              <h2 class="text-center">Front End</h2>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+              <span class="chart plus-symbol" data-percent="90"
+                ><span class="percent">90</span></span
+              >
+              <h2 class="text-center">Back End</h2>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+              <span class="chart equal-symbol" data-percent="95"
+                ><span class="percent">95</span></span
+              >
+              <h2 class="text-center">Passion</h2>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+              <span class="chart" data-percent="90"
+                ><span class="percent">90</span></span
+              >
+              <h2 class="text-center main-color">High Score</h2>
+            </div>
+          </div>
+          <!-- End row -->
+        </div>
+      </section>
+
+      <!--
+        ==============================================
+        PORTFOLIO
+ <        =============================================== -->
+ <!--      --> 
+ <!--      <section id="portfolio" class="big-padding"> -->
+ <!--        <div class="container"> -->
+ <!--          <h1 class="section-title"> -->
+ <!--            My portfolio<span class="main-color">4</span> -->
+ <!--          </h1> -->
+ <!--          <p class="subtitle">See what people say about my work</p> -->
+<!--  -->
+          <!-- ==== Portfolio Filters ==== -->
+<!--  -->
+ <!--          <div class="text-center scrollimation fade-up"> -->
+ <!--            <div id="filter-works" class="btn-group"> -->
+ <!--              <button -->
+ <!--                data-filter="*" -->
+ <!--                type="button" -->
+ <!--                class="btn btn-default active" -->
+ <!--              > -->
+ <!--                All Items<span class="project-count"></span> -->
+ <!--              </button> -->
+ <!--              <button data-filter=".web" type="button" class="btn btn-default"> -->
+ <!--                Web<span class="project-count"></span> -->
+ <!--              </button> -->
+ <!--              <button -->
+ <!--                data-filter=".print" -->
+ <!--                type="button" -->
+ <!--                class="btn btn-default" -->
+ <!--              > -->
+ <!--                Print<span class="project-count"></span> -->
+ <!--              </button> -->
+ <!--              <button -->
+ <!--                data-filter=".video" -->
+ <!--                type="button" -->
+ <!--                class="btn btn-default" -->
+ <!--              > -->
+ <!--                Video<span class="project-count"></span> -->
+ <!--              </button> -->
+ <!--            </div> -->
+ <!--          </div> -->
+ <!--        </div> -->
+<!--  -->
+ <!--        <div class="container scrollimation fade-up"> -->
+ <!--          <div id="projects-container" class="row"> -->
+ <!--            <!- -->
+ <!--              ============================================== -->
+ <!--              SINGLE PROJECT ITEM -->
+ <!--              =============================================== -->
+ <!--            --> 
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 web" -->
+ <!--              href="#?slider-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-1.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Project with Slider</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Brochure design</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 web" -->
+ <!--              href="#?youtube-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-2.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Video project</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Youtube video</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 web" -->
+ <!--              href="#?images-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-3.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Fullwidth images</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Professional Web Design</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 web" -->
+ <!--              href="#?vimeo-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-4.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Another Video project</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Vimeo video</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 print" -->
+ <!--              href="#?slider-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-6.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Project with Slider</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Modern Business Card</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 print" -->
+ <!--              href="#?images-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-7.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Fullwidth images</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Poster Design</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 print" -->
+ <!--              href="#?slider-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-8.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Project with Slider</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Personal Business Card</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 print" -->
+ <!--              href="#?vimeo-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-5.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Video project</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Vimeo video</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 video" -->
+ <!--              href="#?slider-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-9.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Project with Slider</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Professional Brand Identity</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 video" -->
+ <!--              href="#?vimeo-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-10.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Another Video project</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Vimeo video</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 video" -->
+ <!--              href="#?images-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-11.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Fullwidth images</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Creative Business Card</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+<!--  -->
+ <!--            <a -->
+ <!--              class="project-item col-sm-6 col-md-4 col-lg-3 video" -->
+ <!--              href="#?youtube-project.html" -->
+ <!--            > -->
+ <!--              <img -->
+ <!--                class="img-responsive project-image" -->
+ <!--                src="assets/images/projects/thumb-12.jpg" -->
+ <!--                alt="" -->
+ <!--              /> -->
+<!--  -->
+ <!--              <div class="hover-title"> -->
+ <!--                <h2 class="project-title">Video project</h2> -->
+                <!-- Project Title -->
+ <!--                <p>Youtube video</p> -->
+                <!-- Project Subtitle -->
+ <!--              </div> -->
+ <!--            </a> -->
+ <!--          </div> -->
+<!--  -->
+ <!--          <p class="lead text-center"> -->
+ <!--            Like what you see? Contact me to discuss about your project! -->
+ <!--          </p> -->
+ <!--          <p class="text-center"> -->
+ <!--            <a class="btn btn-dc btn-main-color scrollto" href="#contact" -->
+ <!--              >Contact Me</a -->
+ <!--            > -->
+ <!--          </p> -->
+ <!--        </div> -->
+ <!--      </section> -->
+<!--  -->
+ <!--      < -->
+ <!--        ============================================== -->
+ <!--        TWITTER -->
+ <!--        =============================================== -->
+ <!--      --> 
+      <section id="twitter-feeds" class="bg-main-color">
+        <div class="container text-center scrollimation fade-right">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <h1>Alumnus of</h1>
+              <p><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzVhOTE5MTt9LmNscy0ye2ZpbGw6I2Q2NTYyYjt9LmNscy0ze2ZpbGw6I2Y5YTAxYjt9LmNscy00e2ZpbGw6I2ZmZjIwMDt9LmNscy01e2ZpbGw6I2IyZDIzNTt9LmNscy02e2ZpbGw6IzEwMGYwZjtmaWxsLW9wYWNpdHk6MC4zO30uY2xzLTd7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi1sb2dvPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00ODUsMTc0LjNjLTE2LjYyLTM3LjU1LTUxLjA1LTk0LjA4LTgzLjMzLTExNS4xMS02Ny41NC00NC0xMzguODMtNjEuODEtMjI3LjkyLTI4LjI3LTExMiw0Mi4xOS0xNDMsMTUwLjc2LTE0NS4yLDE1Ni44M0MxOCwyMTcuMjYsMTEuMjEsMjQ5LjYzLDE0LjIxLDI3NS4zMiwyOC4wNywzOTQuMjgsMTIxLjY4LDQ5NSwyNzQuNTUsNDk4LjQ4YzU2LjY4LDEuMjgsMTMzLjE3LTM4LjU5LDE2NS03Ny41M0M1MTcuMTMsMzI1Ljg4LDUwMS42LDIxMS44NSw0ODUsMTc0LjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDU0LjY1LDE2MS41NEM0MzkuNzYsMTI3LjYsNDE0LDk4Ljg1LDM4NS4xMSw3OS44NCwzMjQuNiw0MC4wNSwyNjAuNzMsMjQsMTgwLjkxLDU0LjI5LDgwLjUyLDkyLjQyLDUyLjc2LDE5MC41Nyw1MC44MiwxOTYuMDYsNDEuNDEsMjIyLjczLDM1LjQzLDI1MiwzOCwyNzUuMjJzMTUuNCw1NS45MiwxNS40LDU1LjkybDQxMC4zNy43MnMxMC4wNi00Ni42LDEwLjkyLTc2LjcxUzQ2OS41NCwxOTUuNDgsNDU0LjY1LDE2MS41NFoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik00NjIsMzM5LjcybC00MDQuMzktMS44czQuNzUsMTIuODMsNy40MiwxOC4yYzEuMjEsMi40NCw4Ljc2LDE2LDguNzYsMTZsMzcwLjg0LDEuMnM2LjU5LTkuNTksMTAuNzgtMTYuNzlTNDYyLDMzOS43Miw0NjIsMzM5LjcyWiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTQ0Mi42LDM3OS41OXMtMTEuNDQsMTUuMTQtMTYuMjEsMjEuNzQtMjEuNiwyMS4xMy0yMS42LDIxLjEzbC0yOTItMy41OXMtMTIuODMtMTAuMTYtMjAuODQtMTljLTguMjgtOS4xNy0xNS43OC0yMi4yMi0xNS43OC0yMi4yMloiLz48cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik0zOTcuMjQsNDMwLjM5UzMzNS42Niw0ODAsMjYxLjE3LDQ3N3MtMTQxLjYyLTUwLjYxLTE0MS42Mi01MC42MVoiLz48cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik0xMjAsMTgzbDE0LjU1LDEuMTMsMTEuNzQsMTYuODhzNTAuNzItMy41Niw2My41OSw0LjMyLDI0LjMxLDI2Ljc4LDI0LjMxLDI2Ljc4bC0xMy40My41NnMtNS4yOS0xMy4wOC0xOC0xNy41OS02Mi4wOSw5LjU3LTYyLjA5LDkuNTdsLTExLjE5LTE1Ljc2LTEwLjA3LDEwLjdTNTkuODQsMjExLDUwLjYxLDIxNS4xMnMtMTcuMjUsMjMuNTMtMTcuMjUsMjMuNTNMMjMuODUsMjM3czExLjI5LTI4Ljc4LDIzLjQxLTM0Ljc4LDYyLjA5LDEuMTIsNjIuMDksMS4xMloiLz48cGF0aCBjbGFzcz0iY2xzLTciIGQ9Ik0xMjAsMTc0bDE0LjU1LDEuMTIsMTEuNzQsMTYuODlzNTAuNzItMy41Nyw2My41OSw0LjMxLDI0LjMxLDI2Ljc5LDI0LjMxLDI2Ljc5bC0xMy40My41NnMtNS4yOS0xMy4wOS0xOC0xNy41OS02Mi4wOSw5LjU3LTYyLjA5LDkuNTdsLTExLjE5LTE1Ljc2LTEwLjA3LDEwLjY5cy01OS41OC04LjY2LTY4LjgxLTQuNS0xNy4yNSwyMy41Mi0xNy4yNSwyMy41MkwyMy44NSwyMjhzMTEuMjktMjguNzgsMjMuNDEtMzQuNzksNjIuMDksMS4xMyw2Mi4wOSwxLjEzWiIvPjxwYXRoIGNsYXNzPSJjbHMtNiIgZD0iTTMyNC4zNiwyNDkuNzcsMzQ1LjYxLDI0N2wxNC41NSwyNC43NywzNS4zOS0uOTJjMTkuODYtLjUyLDQxLjU3LTIsNjEsNC41OCwyNC41OCw4LjMzLDM1LDI4LjY1LDQyLjQzLDUyLjE2LDAsMC0xNy4zMi0yLjIxLTE3LjM0LTIuMjUtNC41Ni02LjYtMTQtMTguNzMtMTYuODgtMjEtOC4yNy02LjYzLTE4LjY2LTguODUtMjkuMjMtMTAuNjYtMTIuNDYtMi4xNC0yMy42MywxLjYzLTM1LjgyLDMuNDYtMTQuOSwyLjIzLTI5LjEzLDYuMTgtNDQsOC40MmwtMTcuOS0yNS44OUwzMTguMiwzMDEuNTVsLTQ1LjQyLTQuODVjLTEzLjY4LTEuNDUtMzAuMzQtNS4yLTQ0LjQ2LTIuNDdDMjExLjg3LDI5Ny40MSwxOTcsMzEwLDE5Mi41NiwzMjEuNWwtMTYuNDUtMWMxMC40NC0xOC43NywzMC4xMS0zNS45NCwzMi4wOC0zNi43OCwxNC4xNy02LDI5LjA5LTExLjM2LDYwLjYyLTEwLjEzbDM4Ljc2LDEuNVoiLz48cGF0aCBjbGFzcz0iY2xzLTciIGQ9Ik0zMjQuMzYsMjQwLjc2LDM0NS42MSwyMzhsMTQuNTUsMjQuNzYsMzUuMzktLjkyYzE5Ljg2LS41MSw0MS41Ny0yLDYxLDQuNTksMjQuNTgsOC4zMywzNSwyOC42NCw0Mi40Myw1Mi4xNiwwLDAtMTcuMzItMi4yMi0xNy4zNC0yLjI1LTQuNTYtNi42LTE0LTE4Ljc0LTE2Ljg4LTIxLTguMjctNi42NC0xOC42Ni04Ljg1LTI5LjIzLTEwLjY3LTEyLjQ2LTIuMTQtMjMuNjMsMS42My0zNS44MiwzLjQ2LTE0LjksMi4yNC0yOS4xMyw2LjE5LTQ0LDguNDJsLTE3LjktMjUuODktMTkuNTgsMjItNDUuNDItNC44NGMtMTMuNjgtMS40Ni0zMC4zNC01LjIxLTQ0LjQ2LTIuNDdDMjExLjg3LDI4OC40MSwxOTcsMzAxLDE5Mi41NiwzMTIuNWwtMTYuNDUtMWMxMC40NC0xOC43NiwzMC4xMS0zNS45NCwzMi4wOC0zNi43NywxNC4xNy02LDI5LjA5LTExLjM3LDYwLjYyLTEwLjE0bDM4Ljc2LDEuNTFaIi8+PC9zdmc+" alt="Suncoast Developers Guild" height="72"></img></p>
+
+              <div
+                id="twitter-slider"
+                class="flexslider"
+                data-widget-id="386017398488186880"
+                data-max-tweets="5"
+              ></div>
+
+              <p>
+                <a
+                  href="https://suncoast.io/"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Follow Me on Twitter"
+                  target="_blank"
+                  >Suncoast Developers Guild</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        ==============================================
+        TESTIMONIALS
+        ===============================================
+      -->
+      <!--
+        <section id="testimonials" class="big-padding gray-bg">
+          <div class="container">
+            <h1 class="section-title">
+              Happy Clients<span class="main-color">5</span>
+            </h1>
+            <p class="subtitle">See what people say about my work</p>
+
+            <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 col-sm-12">
+                <div class="testimonial-controls">
+                  <span class="previous"><i class="fa fa-angle-left"></i></span>
+                  <span class="next"><i class="fa fa-angle-right"></i></span>
+                </div>
+
+                <div id="testimonials-slider" class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <div class="media scrollimation fade-right">
+                        <div class="media-left">
+                          <img
+                            class="media-object img-circle"
+                            src="assets/images/client-1.jpg"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="media-body">
+                          <p class="testimonial">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nullam rhoncus nec magna eget ultricies. Class
+                            aptent taciti sociosqu ad litora torquent per conubia
+                            nostra Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam rhoncus nec magna eget
+                            ultricies. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra
+                          </p>
+                          <p class="client">
+                            John Doe / <a href="#link">Google Inc.</a>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="media scrollimation fade-left">
+                        <div class="media-body">
+                          <p class="testimonial">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nullam rhoncus nec magna eget ultricies. Class
+                            aptent taciti sociosqu ad litora torquent per conubia
+                            nostra
+                          </p>
+                          <p class="client">
+                            John Doe / <a href="#link">Google Inc.</a>
+                          </p>
+                        </div>
+
+                        <div class="media-right">
+                          <img
+                            class="media-object img-circle"
+                            src="assets/images/client-2.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="media">
+                        <div class="media-body">
+                          <p class="testimonial">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nullam rhoncus nec magna eget ultricies. Class
+                            aptent taciti sociosqu ad litora torquent per conubia
+                            nostra
+                          </p>
+                          <p class="client">
+                            John Doe / <a href="#link">Google Inc.</a>
+                          </p>
+                        </div>
+
+                        <div class="media-right">
+                          <img
+                            class="media-object img-circle"
+                            src="assets/images/client-3.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="media">
+                        <div class="media-left">
+                          <img
+                            class="media-object img-circle"
+                            src="assets/images/client-4.jpg"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="media-body">
+                          <p class="testimonial">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nullam rhoncus nec magna eget ultricies. Class
+                            aptent taciti sociosqu ad litora torquent per conubia
+                            nostra
+                          </p>
+                          <p class="client">
+                            John Doe / <a href="#link">Google Inc.</a>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="white-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <a href="#"
+                  ><img
+                    class="img-responsive client-logo"
+                    src="assets/images/client-logo-1.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="col-sm-3">
+                <a href="#"
+                  ><img
+                    class="img-responsive client-logo"
+                    src="assets/images/client-logo-2.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="col-sm-3">
+                <a href="#"
+                  ><img
+                    class="img-responsive client-logo"
+                    src="assets/images/client-logo-3.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="col-sm-3">
+                <a href="#"
+                  ><img
+                    class="img-responsive client-logo"
+                    src="assets/images/client-logo-4.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+
+      <!--
+        ==============================================
+        CONTACT
+        ===============================================
+      -->
+      <!-- <section id="contact" class="big-padding light-typo color-overlay">
+        <div class="container">
+          <h1 class="section-title">
+            Contact Me<span class="main-color">6</span>
+          </h1>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-5 scrollimation fade-right">
+              <p class="lead">
+                I am available for freelance. <br />Can't wait for the next
+                exciting project! Could it be yours?
+              </p>
+
+              <p>
+                John Doe<br />
+                W325 State Road 123<br />
+                Mondovi, WI(Wisconsin) 98746-54321<br />
+                (123) 456 - 7890 <br />
+              </p>
+
+              <div class="social-links">
+                <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-fw fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-fw fa-linkedin-square"></i></a>
+              </div>
+
+              <p>
+                <a class="mail-styled" href="mailto:mail@example.com"
+                  >contact@johndoe.com</a
+                >
+              </p>
+            </div> -->
+
+            <!-- === Contact Form === -->
+<!-- 
+            <form
+              id="contact-form"
+              class="col-sm-6 col-md-offset-1 scrollimation fade-left"
+              action="contact.php"
+              method="post"
+              novalidate
+            >
+              <div class="form-group">
+                <div class="controls">
+                  <input
+                    id="contact-name"
+                    name="contactName"
+                    class="form-control requiredField"
+                    type="text"
+                    data-error-empty="is required"
+                  />
+                  <label class="control-label" for="contact-name">Name</label>
+                </div>
+              </div>
+               End name input -->
+
+              <!-- <div class="form-group">
+                <div class="controls">
+                  <input
+                    id="contact-mail"
+                    name="email"
+                    class="form-control requiredField"
+                    type="email"
+                    data-error-empty="is required"
+                    data-error-invalid="is invalid"
+                  />
+                  <label class="control-label" for="contact-mail">Email</label>
+                </div>
+              </div> -->
+              <!-- End email input -->
+<!-- 
+              <div class="form-group">
+                <div class="controls">
+                  <textarea
+                    id="contact-message"
+                    name="comments"
+                    class="form-control requiredField"
+                    rows="6"
+                    data-error-empty="is required"
+                  ></textarea>
+                  <label class="control-label" for="contact-message"
+                    >Message</label
+                  >
+                </div>
+              </div> -->
+              <!-- End textarea -->
+
+              <!-- <button
+                name="submit"
+                type="submit"
+                class="btn"
+                data-error-message="Please fill the required fields"
+                data-sending-message="Sending Message"
+                data-ok-message="Your Message has been sent!"
+              >
+                Send It
+              </button>
+              <input
+                type="hidden"
+                name="submitted"
+                id="submitted"
+                value="true"
+              />
+            </form> -->
+            <!-- End contact-form -->
+          <!-- </div>
+        </div>
+      </section> --> 
+
+      <!--
+        ==============================================
+        FOOTER
+        ===============================================
+      -->
+
+      <footer id="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2">
+              <a class="logo-link scrollto" href="#home">
+            <i class="fab fa-d-and-d fa-2x"></i>
+          </a>
+              </a>
+            </div>
+
+            <div class="col-sm-8">
+              <nav>
+                <ul class="footer-nav">
+                  <li><a class="scrollto" href="#home">Home</a></li>
+                  <li><a class="scrollto" href="#services">Passions</a></li>
+                  <li><a class="scrollto" href="#about">About</a></li>
+                  <li><a class="scrollto" href="#skills">Skills</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-sm-2 text-right social-links">
+              <!-- <a href="#" data-toggle="tooltip" title="Follow me on Twitter"
+                ><i class="fa fa-fw fa-twitter"></i
+              ></a>
+              <a href="#" data-toggle="tooltip" title="Follow me on Facebook"
+                ><i class="fa fa-fw fa-facebook"></i
+              ></a> -->
+              <a href="https://www.linkedin.com/in/allan-seitz/" data-toggle="tooltip" title="Follow me on LinkedIn"
+                ><i class="fa fa-fw fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="project-viewer" class="modal fade">
+      <span id="close-project-viewer" data-dismiss="modal">&times;</span>
+
+      <div class="container">
+        <div id="project-viewer-content"></div>
+
+        <div id="project-viewer-footer">
+          <div class="project-nav">
+            <span
+              class="previous-project"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Previous Project"
+              ><i class="fa fa-long-arrow-left"></i
+            ></span>
+            <span
+              class="back-to-portfolio"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Back to Portfolio"
+              data-dismiss="modal"
+              ><i class="fa fa-th-large"></i
+            ></span>
+            <span
+              class="next-project"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Next Project"
+              ><i class="fa fa-long-arrow-right"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+
+    <!--
+      ==============================================
+      SCRIPTS
+      ===============================================
+    -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>'
+        );
+    </script>
+
+    <script src="assets/js/libs/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/twitterFetcher_min.js"></script>
+    <script src="assets/js/jquery.flexslider.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
