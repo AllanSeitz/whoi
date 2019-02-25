@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "deploy": "surge ./public --domain whoi-allan.surge.sh",
+    "deploy": "surge ./public --domain Allans-portfolio.surge.sh",
     "start": "browser-sync start --server \"public\" --files \"public\""
   },
   "dependencies": {
